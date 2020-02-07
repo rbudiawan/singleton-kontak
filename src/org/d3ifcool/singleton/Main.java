@@ -14,7 +14,7 @@ public class Main {
         panel = new JPanel();
 
         String column[]={"Nama","Kota Asal"};
-        String[][] data = new DataKontak().getData();
+        String[][] data = DataKontak.getInstance().getData();
         table = new JTable(data,column);
         scrollPane = new JScrollPane(table);
 
